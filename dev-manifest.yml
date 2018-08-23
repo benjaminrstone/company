@@ -1,0 +1,11 @@
+---
+applications:
+- name: company
+  buildpack: java_buildpack
+  disk_quota: 1G
+  memory: 1G
+  services:
+  - company-mysql
+  - cndev-config-server
+  env:
+    SPRING_PROFILES_ACTIVE: dev
