@@ -30,7 +30,6 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('mysql:mysql-connector-java')
-	compile('io.pivotal.spring.cloud:spring-cloud-services-starter-config-client')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
@@ -38,9 +37,4 @@ dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Camden.RELEASE"
 	}
-}
-dependencyManagement {
-    imports {
-        mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:2.0.1.RELEASE"
-    }
 }
